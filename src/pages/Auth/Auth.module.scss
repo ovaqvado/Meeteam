@@ -1,0 +1,245 @@
+@import '../../assets/styles/styles.scss';
+@include input-number;
+
+.Auth_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 0 460px;
+}
+
+.box_auth {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo_text {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.text {
+	@include black-regular;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.inputs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.input_box {
+	display: flex;
+	flex-direction: column;
+	width: 520px;
+	gap: 8px;
+}
+
+.label {
+	font-size: 16px;
+	font-family: $primary-font;
+	font-weight: 400;
+}
+
+.input {
+	width: 520px;
+	height: 49px;
+	box-sizing: border-box;
+	border-radius: 12px;
+	border: 1px solid rgba(228, 228, 231, 1);
+	padding-left: 16px;
+	font-size: 16px;
+	outline: none;
+	&:focus {
+		border: 1px solid rgba(92, 115, 219, 1);
+	}
+	&::placeholder {
+		color: rgba(159, 166, 178, 1);
+		font-size: 14px;
+		font-family: $primary-font;
+	}
+}
+
+.input_pass {
+	position: absolute;
+	width: 520px;
+	height: 49px;
+	box-sizing: border-box;
+	border-radius: 12px;
+	border: 1px solid rgba(228, 228, 231, 1);
+	padding-left: 16px;
+	font-size: 16px;
+	outline: none;
+	&:focus {
+		border: 1px solid rgba(92, 115, 219, 1);
+	}
+	&::placeholder {
+		color: rgba(159, 166, 178, 1);
+		font-size: 14px;
+		font-family: $primary-font;
+	}
+}
+
+.input_pass_box {
+	position: relative;
+	width: 520px;
+	height: 50px;
+}
+.hidden_pas {
+	position: absolute;
+	width: 16px;
+	margin-top: 16px;
+	margin-left: 490px;
+	cursor: pointer;
+}
+
+.reset_pas {
+	@include black-regular;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 16px 0px;
+	&:hover {
+		opacity: 0.6;
+	}
+}
+
+.btn_box {
+	position: relative;
+	width: 520px;
+	height: 48px;
+}
+
+.icon_btn {
+	position: absolute;
+	right: 175px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.button {
+	width: 520px;
+	height: 48px;
+	font-size: 18px;
+	font-family: $primary-font;
+	font-weight: 400;
+	color: $white-color;
+	box-sizing: border-box;
+	background: rgba(71, 99, 228, 1);
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+}
+
+.cre_account {
+	display: flex;
+	flex-direction: row;
+	gap: 7px;
+	font-family: $primary-font;
+}
+
+.button_sub {
+	cursor: pointer;
+	color: rgb(92, 115, 219);
+	font-weight: 400;
+	font-size: 16px;
+	border: none;
+	background: none;
+	border-bottom: 1px solid rgb(1, 1, 211);
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.checkbox_container {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	margin: 16px 0;
+}
+
+.checkbox {
+	width: 14px;
+	height: 14px;
+}
+
+.check_text {
+	@include black-regular;
+}
+
+.check_btn {
+	@include black-regular;
+	color: rgb(102, 124, 221);
+	font-weight: 400;
+	background: none;
+	border: none;
+}
+
+.error {
+	border: 1px solid red;
+	&:focus {
+		border: 1px solid red;
+	}
+	&::placeholder {
+		color: red;
+	}
+}
+
+.error_text {
+	color: red;
+}
+
+.error_box {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	width: 252px;
+	height: 43px;
+	bottom: 46px;
+	gap: 36px;
+	margin: 0;
+	background: $black-color;
+	color: white;
+	font-family: $primary-font;
+	border-radius: 10px;
+	animation: 1s forwards;
+}
+
+// Forgot password
+
+.forgot_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.logo_forgot {
+	margin-bottom: 40px;
+}
+
+.button_forgot {
+	margin: 16px 0px 8px 0px;
+}
+
+.forgot_link {
+	cursor: pointer;
+	color: rgb(92, 115, 219);
+	font-weight: 400;
+	font-size: 16px;
+	font-family: $primary-font;
+	border-bottom: 1px solid rgb(1, 1, 211);
+	text-decoration: none;
+	&:hover {
+		opacity: 0.7;
+	}
+}

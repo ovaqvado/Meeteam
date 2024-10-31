@@ -1,0 +1,50 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+// BreakPoints
+$x-small: 576px;
+$small: 576;
+$medium: 768;
+$large: 992;
+$extra-large: 1200;
+$extra-extra-large: 1400;
+
+// Colors
+$black-color: rgba(0, 0, 0, 1);
+$white-color: rgba(255, 255, 255, 1);
+
+// Fonts
+$primary-font: 'Inter', sans-serif;
+
+@mixin active-menu {
+	font-family: 'Inter', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: $white-color;
+}
+
+@mixin black-regular {
+	font-family: 'Inter', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: $black-color;
+}
+
+@mixin black-semi-bold {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	color: $black-color;
+}
+
+@mixin input-number {
+	input[type='number']::-webkit-outer-spin-button,
+	input[type='number']::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+	input[type='number'],
+	input[type='number']:hover,
+	input[type='number']:focus {
+		appearance: none;
+		-moz-appearance: textfield;
+	}
+}
